@@ -1,0 +1,43 @@
+div {
+  display2 : inline-block;
+}
+
+.outercontainer { 
+  position:relative; 
+}
+.center { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.center-horizontal {
+  margin: auto;
+  margin-left: auto;
+  width:80px;
+}
+
+nav {
+  width: 160px;
+  height: 5em;
+  padding: 0px;
+  border: 8px solid red;
+  background: yellow;
+}
+
+.content-box { 
+  box-sizing: content-box; 
+  /* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
+     Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
+     Content box width: 160px
+     Content box height: 80px */
+}
+
+.border-box { 
+  box-sizing: border-box;
+  /* Total width: 160px
+     Total height: 80px
+     Content box width: 160px - (2 * 20px) - (2 * 8px) = 104px
+     Content box height: 80px - (2 * 20px) - (2 * 8px) = 24px */
+}
